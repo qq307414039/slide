@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+</head>
+<body>
+
+<div class="carousel">
+    <ul class="img_wrap" id="img_wrap">
+        <li><a href="javascript:;"><img src="img/1_0.jpg"></a></li>
+        <li><a href="javascript:;"><img src="img/1_1.jpg"></a></li>
+        <li><a href="javascript:;"><img src="img/1_2.jpg"></a></li>
+    </ul>
+    <ul class="btn_wrap">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+    slide.move({
+        imgWrap: 'img_wrap',//图片父元素
+        dotWrap: 'btn_wrap',//切换按钮父元素
+        activeClass: 'active',//切换按钮选中样式
+        intervalTime: 3000,//计时间隔
+        animateTime: 300//动效时长
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    font-size: calc(100vw / 3.75);
+}
+
+body, .carousel, .carousel ul, .carousel li {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+    height: 1.8rem;
+    overflow: hidden;
+}
+
+.carousel ul.img_wrap {
+    min-width: 200%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+}
+
+.carousel ul.img_wrap li {
+    float: left;
+    height: 100%;
+    list-style: none;
+}
+
+.carousel ul.img_wrap li img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.carousel ul.btn_wrap {
+    position: absolute;
+    bottom: 0.2rem;
+    width: auto;
+    height: 0.1rem;
+    z-index: 101;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 0.05rem;
+}
+
+.carousel ul.btn_wrap li {
+    width: 0.3rem;
+    height: 0.1rem;
+    display: inline-block;
+    background: white;
+    cursor: pointer;
+    float: left;
+}
+
+.carousel ul.btn_wrap li:first-child {
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+}
+
+.carousel ul.btn_wrap li:last-child {
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+}
+
+.carousel ul.btn_wrap li.active {
+    background: #fdcf17;
+    border-radius: 0.05rem;
+}
